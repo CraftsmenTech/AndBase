@@ -1,0 +1,65 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Widget" parent="android:Widget"></style>
+    
+    <style name="mCustomWindowTitleBackground" parent="@style/Widget">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="mExpandableListView" parent="@style/Widget">
+        <item name="android:groupIndicator">@drawable/expander_group</item>
+        <item name="android:indicatorLeft">10dip</item>
+        <item name="android:indicatorRight">?android:attr/expandableListPreferredItemIndicatorRight</item>
+        <item name="android:childDivider">@drawable/list_divider</item>
+        
+    </style>
+
+    <style name="mProgressBarHorizontal" parent="@style/Widget">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+    </style>
+    
+    <style name="mProgressBarCircular" parent="@style/Widget">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_circular</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+    </style>
+    
+      <style name="mButtonWhite" parent="@style/Widget">
+        <item name="android:background">@drawable/button_selector_white</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmallInverse</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@android:color/primary_text_light</item>
+    </style>
+    
+    <style name="mListView" parent="@style/Widget">
+        <item name="android:listSelector">@drawable/list_selector_background</item>
+        <item name="android:cacheColorHint">?android:attr/colorBackgroundCacheHint</item>
+        <item name="android:divider">@drawable/list_divider</item>
+    </style>
+    
+    <style name="mEditText" parent="@style/Widget">
+       <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/input_bg</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+   <style name="mCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:button">@drawable/check_box</item>
+    </style>
+    
+
+</resources>
